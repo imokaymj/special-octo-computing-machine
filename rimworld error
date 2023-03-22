@@ -1,0 +1,27 @@
+Exception in RimWorld.ThinkNode_Priority_GetJoy TryIssueJobPackage: System.ArgumentNullException: Value cannot be null.
+Parameter name: Activator.CreateInstance(type) called with a null type, possible context=JoyGiver_ListenSong
+  at VisualExceptions.ExceptionsAndActivatorHandler+PatchedActivator.CreateInstance (System.Type type, System.Object obj) [0x00032] in <07c490e249c249ff929a9cc5067837e4>:0 
+  at (wrapper dynamic-method) RimWorld.JoyGiverDef.RimWorld.JoyGiverDef.get_Worker_Patch0(RimWorld.JoyGiverDef)
+  at (wrapper dynamic-method) RimWorld.JobGiver_GetJoy.RimWorld.JobGiver_GetJoy.TryGiveJob_Patch1(RimWorld.JobGiver_GetJoy,Verse.Pawn)
+  at Verse.AI.ThinkNode_JobGiver.TryIssueJobPackage (Verse.Pawn pawn, Verse.AI.JobIssueParams jobParams) [0x00000] in <38562b1a2ab64eacb931fb5df05ca994>:0 
+  at (wrapper dynamic-method) Verse.AI.ThinkNode_Priority.Verse.AI.ThinkNode_Priority.TryIssueJobPackage_Patch0(Verse.AI.ThinkNode_Priority,Verse.Pawn,Verse.AI.JobIssueParams)
+UnityEngine.StackTraceUtility:ExtractStackTrace ()
+(wrapper dynamic-method) Verse.Log:Verse.Log.Error_Patch4 (string)
+(wrapper dynamic-method) Verse.AI.ThinkNode_Priority:Verse.AI.ThinkNode_Priority.TryIssueJobPackage_Patch0 (Verse.AI.ThinkNode_Priority,Verse.Pawn,Verse.AI.JobIssueParams)
+(wrapper dynamic-method) Verse.AI.ThinkNode_PrioritySorter:Verse.AI.ThinkNode_PrioritySorter.TryIssueJobPackage_Patch0 (Verse.AI.ThinkNode_PrioritySorter,Verse.Pawn,Verse.AI.JobIssueParams)
+(wrapper dynamic-method) Verse.AI.ThinkNode_Priority:Verse.AI.ThinkNode_Priority.TryIssueJobPackage_Patch0 (Verse.AI.ThinkNode_Priority,Verse.Pawn,Verse.AI.JobIssueParams)
+Verse.AI.ThinkNode_Tagger:TryIssueJobPackage (Verse.Pawn,Verse.AI.JobIssueParams)
+Verse.AI.ThinkNode_Subtree:TryIssueJobPackage (Verse.Pawn,Verse.AI.JobIssueParams)
+(wrapper dynamic-method) Verse.AI.ThinkNode_Priority:Verse.AI.ThinkNode_Priority.TryIssueJobPackage_Patch0 (Verse.AI.ThinkNode_Priority,Verse.Pawn,Verse.AI.JobIssueParams)
+Verse.AI.ThinkNode_Conditional:TryIssueJobPackage (Verse.Pawn,Verse.AI.JobIssueParams)
+(wrapper dynamic-method) Verse.AI.ThinkNode_Priority:Verse.AI.ThinkNode_Priority.TryIssueJobPackage_Patch0 (Verse.AI.ThinkNode_Priority,Verse.Pawn,Verse.AI.JobIssueParams)
+(wrapper dynamic-method) Verse.AI.Pawn_JobTracker:Verse.AI.Pawn_JobTracker.DetermineNextJob_Patch2 (Verse.AI.Pawn_JobTracker,Verse.ThinkTreeDef&)
+Verse.AI.Pawn_JobTracker:TryFindAndStartJob ()
+(wrapper dynamic-method) Verse.AI.Pawn_JobTracker:Verse.AI.Pawn_JobTracker.EndCurrentJob_Patch6 (Verse.AI.Pawn_JobTracker,Verse.AI.JobCondition,bool,bool)
+(wrapper dynamic-method) Verse.AI.Pawn_JobTracker:Verse.AI.Pawn_JobTracker.JobTrackerTick_Patch0 (Verse.AI.Pawn_JobTracker)
+(wrapper dynamic-method) Verse.Pawn:Verse.Pawn.Tick_Patch2 (Verse.Pawn)
+(wrapper dynamic-method) Verse.TickList:Verse.TickList.Tick_Patch0 (Verse.TickList)
+(wrapper dynamic-method) Verse.TickManager:Verse.TickManager.DoSingleTick_Patch9 (Verse.TickManager)
+Verse.TickManager:TickManagerUpdate ()
+(wrapper dynamic-method) Verse.Game:Verse.Game.UpdatePlay_Patch2 (Verse.Game)
+(wrapper dynamic-method) Verse.Root_Play:Verse.Root_Play.Update_Patch0 (Verse.Root_Play)
